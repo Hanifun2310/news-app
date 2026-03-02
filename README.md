@@ -1,16 +1,50 @@
-# news_app
+Fitur Utama
+Manajemen State GetX: Menggunakan pustaka get untuk navigasi dan kontrol state aplikasi.
 
-A new Flutter project.
+Navigasi Terstruktur: Implementasi rute yang rapi melalui file app_pages.dart dan app_routes.dart.
 
-## Getting Started
+Tema Modern: Mendukung Material 3 dengan skema warna indigo dan latar belakang yang bersih.
 
-This project is a starting point for a Flutter application.
+Interaktivitas: Kemampuan untuk membuka tautan eksternal menggunakan url_launcher.
 
-A few resources to get you started if this is your first Flutter project:
+Teknologi yang Digunakan
+Framework: Flutter (SDK minimal ^3.10.7).
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Manajemen State: GetX.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Ikon: Cupertino Icons.
+
+Navigasi: GetPage Routing.
+
+Struktur Proyek
+Aplikasi ini mengikuti arsitektur modular yang umum digunakan pada pola GetX:
+
+lib/main.dart: Titik masuk utama aplikasi dengan konfigurasi tema dan rute awal.
+
+lib/app/routes/: Definisi navigasi aplikasi.
+
+lib/app/modules/: Berisi folder modul (Dashboard, Home, Pencarian, Article Detail) yang masing-masing memiliki View, Controller, dan Binding sendiri.
+
+Memulai (Getting Started)
+Untuk menjalankan proyek ini secara lokal, ikuti langkah-langkah berikut:
+
+Prasyarat: Pastikan Flutter SDK sudah terinstal di komputer Anda.
+
+Clone Repository:
+
+Bash
+git clone [url-repository-anda]
+Instal Dependensi: Jalankan perintah berikut di terminal:
+
+Bash
+flutter pub get
+Jalankan Aplikasi:
+
+Bash
+flutter run
+Dependensi Penting
+get: ^4.7.3
+
+url_launcher: ^6.3.2
+
+cupertino_icons: ^1.0.8
